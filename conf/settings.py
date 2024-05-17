@@ -51,6 +51,11 @@ THIRD_APPS = [
 ]
 MY_APPS = [
     'users',
+    'app_journal',
+    'app_articles',
+    'app_contacts',
+    'app_questin_answer',
+    'app_requirement',
 ]
 INSTALLED_APPS = DJANGO_DEFAULT_APPS + THIRD_APPS + MY_APPS
 
@@ -155,4 +160,9 @@ REST_FRAMEWORK = {
     )
 }
 
-# drf simple jwt
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'tohirovahmad1519@gmail.com'
+EMAIL_HOST_PASSWORD = 'oziy qixb oocm ibgd'
